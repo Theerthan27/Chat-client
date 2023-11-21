@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: black
+}
+
+.title {
+    margin: 20px 0;
+  }
+  
+  .main {
+    border: 4px solid white;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  
+  .name {
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 4px 16px;
+    color: #7e7e7e;
+    background-color: black;
+  }
+  
+  .name > span {
+    color: white;
+  }
+  
+  .name-input {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: black;
+  }
+  
+  .message-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 3px;
+    margin-left: 5px;
+    width: 400px;
+    height: 600px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+.message-left,
+.message-right {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.message-left {
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: #c471eb;
+  box-shadow: 2px 2px 2px #dcdcdc;
+  color: white;
+}
+
+.message-right {
+  border-radius: 20px 20px 0px 20px;
+  align-self: flex-end;
+  background-color: #5b42c9;
+  box-shadow: 2px 2px 2px #dcdcdc;
+  color: #f6f6f6;
+}
+
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 14px;
+  padding: 0px 16px 16px 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.message-input {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 0 12px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  background-color: white;
+  cursor: text;
+  color: black;
+}
+
+.send-button {
+  height: 48px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0px 20px;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+.v-divider {
+  height: 48px;
+  width: 3px;
+  background-color: black;
+}
+
+.clients-total {
+  margin: 20px 0;
+  color: white;
+}
